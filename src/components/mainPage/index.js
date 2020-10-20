@@ -4,13 +4,20 @@ import SecondPage from './main/secondPage';
 import ThirdPage from './main/thirdPage';
 import FourthPage from './main/fourthPage';
 import FifthPage from './main/fifthPage';
-import './mainPage.css';
+
+
+import Menu from './main/menu';
+
+
+// import './mainPage.css';
+import './mainPage.scss';
 import Header from '../header/header';
 
 function MainPage() {
     return (
         <>
             <main>
+            <Menu />
             <FirstPage styleClass="white-style-background"/>
             <SecondPage styleClass="black-style-background"/>
             <ThirdPage styleClass="white-style-background"/>
