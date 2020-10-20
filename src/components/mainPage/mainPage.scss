@@ -1,22 +1,49 @@
+@import "../../scss/variable.scss"; 
+
 @media screen and (max-width: 600px) {
-    .menu {
+    .Menu-logo {
         display: flex !important;
-        justify-content: center;
-        align-items: center;
-        // position: -webkit-sticky;
-        position: fixed;
-        top: 70%;
-        left: 80%;
         
-        background-color: #D7B399;
-        border-radius: 50%;
-        height: 4rem;
-        width: 4rem;
     }
 }
+.Menu-logo {
+  display: none;
+}
+.Menu-logo {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 70%;
+  left: 80%;
+  
+  background-color: $darkColor;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
 
-.menu {
-    display: none;
+
+
+.Menu-collection {
+  display: block;
+  padding-left: 10%;
+  padding-top: 10%;
+
+  .Menu-header{
+    font-size: 1.3rem;
+  }
+  .Link-to-collection {
+    display: block;
+    padding-left: 5%;
+
+    
+  }
+  a { 
+    display: block;
+    padding: 5%;
+    font-weight: 600;
+    @extend .link-to-text;
+  }
 }
 
 
