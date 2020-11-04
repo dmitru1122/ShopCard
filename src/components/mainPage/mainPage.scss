@@ -3,7 +3,7 @@
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $tabletDesign) {
     .Menu-logo {
         display: flex !important;
         
@@ -65,7 +65,7 @@ $break-large: 1200px;
     display: block;
     padding: 5%;
     font-weight: 600;
-    @extend .link-to-text;
+    @include link-to-text;
   }
 }
 
@@ -91,7 +91,6 @@ $break-large: 1200px;
   align-items: center;
 
 
-
   .fp-main-sale-name {
     padding: 1rem;
 
@@ -108,9 +107,11 @@ $break-large: 1200px;
   }
 
   .fp-main-sale-model {
+
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 
     .sale-image img{
       width: 100%;
@@ -131,23 +132,6 @@ $break-large: 1200px;
 
 
 }
-
-// .first-page-footer-conteiner {
-//   display: flex;
-//   flex-flow: row nowrap;
-//   justify-content: center;
-
-//   div{
-//     background-color: $darkColor;
-//     border-radius: 0.4rem;
-//     color: $darkColor;
-//     margin: 5%;
-//     width: 4rem;
-//     margin-bottom: 5rem;
-//   }
-// }
-
-
 
 
 
@@ -248,17 +232,17 @@ $break-large: 1200px;
 }
   
   
-  // .second-page {
-  //   padding-top: 5.7rem;
-  // }
-  // .sp-head {
-  //   font-size: 2.14rem;
-  //   padding-bottom: 1.6rem;
-  // }
-  // .sp-description {
-  //   font-size: 1.5rem;
-  //   padding-bottom: 4.9rem;
-  // }
+  .second-page {
+    padding-top: 5.7rem;
+  }
+  .sp-head {
+    font-size: $largeHeader;
+    padding-bottom: 1.6rem;
+  }
+  .sp-description {
+    font-size: $middleHeader;
+    padding-bottom: 4.9rem;
+  }
   
   
   
@@ -293,9 +277,15 @@ $break-large: 1200px;
     display: flex;
     height: 14rem;
     width: 100%;
+    
     // min-width: 22rem;
     flex-flow: row wrap;
     justify-content: space-between;
+
+    div :first-child {
+      color: $darkColor;
+      font-weight: bold;
+    }
   }
   
   

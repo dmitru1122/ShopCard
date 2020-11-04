@@ -69,8 +69,9 @@ function CollectionHeader(props) {
         <div className="collection-header">
             <div>
                 <div>{sex} collection</div>
-                <div>Clothe</div>
-                <div>Button</div>
+                {/* <div>Clothe</div>
+                <div>Button</div> */}
+                {/* it can be links to ... */}
             </div>
             <div>
                 <img src={lin} title='' alt='' />
@@ -155,7 +156,7 @@ function WomanCollection() {
                 <CollectionHeader sex="Woman" link={links.imageWoman} />
                 </section>
                 <section className="man-collection">
-                {/* <CollectionWoman srcImages=" "/> */}
+                <CollectionWoman srcImages=" "/>
             </section>
         </>
     )

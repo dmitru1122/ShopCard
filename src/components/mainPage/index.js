@@ -12,16 +12,18 @@ import {Menu, MenuFragment} from './main/menu';
 // import './mainPage.css';
 import './mainPage.scss';
 import Header from '../header/header';
+import Footer from '../footer/footer';
 
 function MainPage() {
     const [menuVisibility, setMenuVisibility] = useState(false);
     // u
     return (
         <>
+            <Header />
             <main>
-                {/* <Menu handle={() => setMenuVisibility(!menuVisibility) }/> */}
+                <Menu handle={() => setMenuVisibility(!menuVisibility) }/>
             
-                {/* {(menuVisibility)?( <MenuFragment />):( */}
+                {(menuVisibility)?( <MenuFragment />):(
                     <div>
                         <FirstPage styleClass="white-style-background"/>
                         <SecondPage styleClass="black-style-background"/>
@@ -29,8 +31,9 @@ function MainPage() {
                         <FourthPage styleClass="black-style-background"/>
                         <FifthPage styleClass="white-style-background"/> 
                     </div>)
-                {/* } */}
+                }
             </main>
+            <Footer />
 
         </>
     );

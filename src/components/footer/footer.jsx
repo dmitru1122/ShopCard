@@ -3,13 +3,13 @@ import Logo from '../images/logo.svg';
 import vkIcon from '../images/icon/vk.svg';
 import facebookIcon from '../images/icon/facebook.svg';
 import instagramIcon from '../images/icon/instagram.svg';
-import './footer.css';
+import './footer.scss';
 
 function LogoDescrioption() {
     return (
         <figure>
             <div className="footer-logo-conteiner text1-7"><img src={Logo} alt="logo"/> <span style={{paddingLeft: '0.5em'}}>Vab</span></div>
-            <div>Descrioption</div>
+            <div className="about-company">Descrioption</div>
         </figure>
     )
 }
@@ -47,6 +47,18 @@ function SameLink() {
     )
 }
 
+
+function MobileDesign() {
+    return (
+        <div className='social-network'>
+                <div className='header'>Social network</div>
+                <div className='vk'><a href='' ><img src={vkIcon} title='vk.com'/> VK.com</a></div>
+                <div className='facebook'><a href='' ><img src={facebookIcon} title='facebook' /> Facebook</a></div>
+                <div className='instagram'><a href='' ><img src={instagramIcon} />Instagram</a></div>
+        </div>
+    )
+}
+
 function Footer(props) {
     const footerClass = "footer " + props.styleClass;
     
@@ -55,6 +67,9 @@ function Footer(props) {
                 <div className="footer-top">
                     <LogoDescrioption />
                     <SameLink />
+                </div>
+                <div className="mobile-design">
+                    <MobileDesign />
                 </div>
                 <div className="footer-buttom white-style-background">
                     <div>All Check...</div>

@@ -1,6 +1,6 @@
 @import "../../scss/variable.scss";
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: $tabletDesign){
     .header {
         display: block;
 

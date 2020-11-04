@@ -51,24 +51,11 @@ function MainBlock() {
 }
 
 
-function FooterInformation() {
-    const dispatch = useDispatch();
-    const counter = useSelector(store => store.counter);
-    return (
-        <div className="first-page-footer-conteiner">
-            <div onClick={() => dispatch(actions.increment(2))}>+2</div>
-            <div>left2</div>
-            <div>left3</div>
-            <div>left4</div>
-        </div>
-    )
-}
 function FirstPage (props) {
     return(
         <div className={props.styleClass} >
             <article className="first-page content">
                 <MainBlock />
-                <FooterInformation />
             </article>
         </div>
     )

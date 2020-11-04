@@ -9,7 +9,7 @@ $middleHeader: 1.7rem;
 $largeHeader: 2.14rem;
 $biggestHeader: 3.95rem;
 
-.link-to-text {
+@mixin link-to-text {
     color: $darkColor;
     text-decoration: none;
   }
