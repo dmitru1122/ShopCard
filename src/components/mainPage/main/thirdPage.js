@@ -188,11 +188,9 @@ function ThirdPage(props) {
 
 
             <article className="content">
-            <p>TO-to-to</p>
                 <StripWithHeader header="New collection" collection={IteamCollection}/>
             </article>
             <aside className="content">
-                <p>TO-to-to</p>
                 <ButtonAllCollection />
             </aside>
         </div>

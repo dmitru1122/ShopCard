@@ -1,12 +1,19 @@
+@import "../../../scss/variable.scss";
+
 .trade-position {
     display: flex;
     flex-flow: column;
     background-image: url(../../images/border/border.png);
     background-size: 100% 100%;
     align-items: center;
-    flex: 1;
+    flex: 1 1 1;
     margin: 1% 1%;
-    width: 12rem;
+    width: 30%;
+    min-width: 110px;
+    div {
+        // flex:1;
+        align-items: center;
+    }
 
     img{
       padding-top: 1rem;
@@ -40,6 +47,7 @@
     // left: 2.14rem;
     font-size: 1.5rem;
     z-index: 2;
+
 
    img {
     width: 100%;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './forAllApp.scss';
 import AddIteam from './components/addIteams/index';
 import MainPage from './components/mainPage/index';
 import Catalog from './components/catalog/index';

@@ -2,7 +2,6 @@
 
 
 
-
 @media screen and (max-width: $tabletDesign) {
     .Menu-logo {
         display: flex !important;
@@ -154,7 +153,7 @@ $break-large: 1200px;
 
 
 
-@media screen and (min-width: $tabletDesign) and (max-width: $desktopDesign) {
+@media screen and (min-width: $tabletDesign) {
 
 .first-page-main {
     display: grid;
@@ -277,9 +276,11 @@ $break-large: 1200px;
     display: flex;
     height: 14rem;
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
     // min-width: 22rem;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
 
     div :first-child {
@@ -343,27 +344,59 @@ $break-large: 1200px;
   
   
   
-  // .fourth-page {
-  //   display: flex;
-  //   flex-flow: row wrap;
-  //   justify-content: space-around;
-  //   align-items: baseline;
-  //   padding-bottom: 5.14rem;
-  //   padding-top: 5.14rem;
-  // }
-  // .fourth-page__descridtion {
-  //   font-size: 2.14rem;
-  // }
-  // .fourth-page__mail input{
-  //   height: 2.85rem;
-  //   width: 18.2rem;
-  //   border-radius: 0.4rem;
-  // }
-  // .fourth-page__submit input{
-  //   height: 3.23rem;
-  //   width: 12rem;
-  //   border-radius: 0.4rem;
-  //   /* padding-left: 1rem; */
-  //   /* padding-right: 1rem; */
-  // }
-  
+  .fourth-page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-bottom: 5.14rem;
+    padding-top: 5.14rem;
+    
+    
+    .fp-descridtion {
+     font-size: 2.14rem;
+
+     @media screen and (min-width:$tabletDesign) {
+      padding-right: 2rem;
+     }
+    }
+
+    form {
+    display: flex;
+    flex-flow: row wrap;
+    // min-width: 400px;
+    align-items: center;
+    justify-content: center;
+
+
+      .fp-mail {
+        padding-right: 0.5rem;
+
+        input{
+          width: 100%;
+          height: $smallHeader;
+          border-radius: 0.4rem;
+
+          @media screen and (min-width: $mobileDesign) {  
+          height: $largeHeader;
+          width: 18.2rem;
+          
+          }
+        }
+      }
+
+
+      .fp-submit input{
+        width: 100%;
+        height: $smallHeader;
+        border-radius: 0.4rem;
+        background-color: $darkColor;
+        font-weight: bold;;
+
+        @media screen and (min-width: $mobileDesign) {   
+          height: $largeHeader;
+          width: 12rem;
+        }
+      }
+    }
+}

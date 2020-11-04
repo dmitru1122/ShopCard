@@ -18,7 +18,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        @extend .link-to-text;
+        @include link-to-text;
 
         span {
             padding-left: 0.5rem;

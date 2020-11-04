@@ -1,3 +1,9 @@
+@import "./scss/variable.scss";
+
+a {
+  @include link-to-text;
+}
+
 body {
   background-color: red;
 }
