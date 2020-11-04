@@ -1,9 +1,27 @@
 $darkColor: #D7B399;
 $white: #FFFFFF;
+$red: #D84033;
 
+// for font-size
+$textSize: 1rem;
+$smallHeader: 1.5rem;
+$middleHeader: 1.7rem;
+$largeHeader: 2.14rem;
+$biggestHeader: 3.95rem;
 
 .link-to-text {
     color: $darkColor;
     text-decoration: none;
   }
   
+.mobileDesign {
+  // .first-page-main {
+    display: block;
+  // }
+}
+
+// $mobileDesign: 320px;
+$mobileDesign: 479px;
+$tabletDesign: 767px;
+$desktopDesign: 1279px
+

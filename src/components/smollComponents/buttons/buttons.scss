@@ -27,5 +27,8 @@
     user-select: none; /* убирать выделение текста */
     padding: .5em 1.3em; /* отступ от текста */
     outline: none; /* убирать контур в Mozilla */
+    
+    white-space: nowrap;
+  
   } 
   

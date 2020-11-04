@@ -155,7 +155,7 @@ function WomanCollection() {
                 <CollectionHeader sex="Woman" link={links.imageWoman} />
                 </section>
                 <section className="man-collection">
-                <CollectionWoman srcImages=" "/>
+                {/* <CollectionWoman srcImages=" "/> */}
             </section>
         </>
     )
@@ -187,9 +187,11 @@ function ThirdPage(props) {
 
 
             <article className="content">
+            <p>TO-to-to</p>
                 <StripWithHeader header="New collection" collection={IteamCollection}/>
             </article>
             <aside className="content">
+                <p>TO-to-to</p>
                 <ButtonAllCollection />
             </aside>
         </div>

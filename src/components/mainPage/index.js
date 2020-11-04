@@ -19,17 +19,17 @@ function MainPage() {
     return (
         <>
             <main>
-                <Menu handle={() => setMenuVisibility(!menuVisibility) }/>
+                {/* <Menu handle={() => setMenuVisibility(!menuVisibility) }/> */}
             
-                {(menuVisibility)?( <MenuFragment />):(
+                {/* {(menuVisibility)?( <MenuFragment />):( */}
                     <div>
                         <FirstPage styleClass="white-style-background"/>
                         <SecondPage styleClass="black-style-background"/>
                         <ThirdPage styleClass="white-style-background"/>
                         <FourthPage styleClass="black-style-background"/>
-                        <FifthPage styleClass="white-style-background"/>
+                        <FifthPage styleClass="white-style-background"/> 
                     </div>)
-                }
+                {/* } */}
             </main>
 
         </>

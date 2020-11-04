@@ -17,7 +17,7 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <Header/>
+          {/* <Header/> */}
 
                 
                 
@@ -30,7 +30,7 @@ class App extends React.Component {
                     <Route path="/catalog/forAll" exact component={Catalog} />
                     <Route path="/catalog/addIteam" exact component={AddIteam}/>
 
-            <Footer />
+            {/* <Footer /> */}
         </Router>
       </>
     );
