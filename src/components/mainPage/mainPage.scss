@@ -1,0 +1,403 @@
+@import "../../scss/variable.scss"; 
+
+
+
+@media screen and (max-width: $tabletDesign) {
+    .Menu-logo {
+        display: flex !important;
+        z-index: 20;
+        
+    }
+
+    
+}
+
+
+
+$break-small: 320px;
+$break-large: 1200px;
+
+.profile-pic {
+  float: left;
+  width: 250px;
+  @media screen and (max-width: $break-small) {
+    width: 100px;
+    float: none;
+  }
+  @media screen and (min-width: $break-large) {
+    float: right;
+  }
+}
+
+.Menu-logo {
+  display: none;
+}
+.Menu-logo {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 70%;
+  left: 70%;
+  
+  background-color: $darkColor;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+
+
+.Menu-collection {
+  display: block;
+  padding-left: 10%;
+  padding-top: 10%;
+
+  .Menu-header{
+    font-size: 1.3rem;
+  }
+  .Link-to-collection {
+    display: block;
+    padding-left: 5%;
+
+    
+  }
+  a { 
+    display: block;
+    padding: 5%;
+    font-weight: 600;
+    @include link-to-text;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.first-page-main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .fp-main-sale-name {
+    padding: 1rem;
+
+    .sale-type{
+      font-size: $middleHeader;
+    }
+    .sale-header{
+      font-size: $largeHeader;
+      color: $red;
+      padding: 1rem;
+
+    }
+
+  }
+
+  .fp-main-sale-model {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+    .sale-image img{
+      width: 100%;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+    }
+    .new-price {
+      font-size: $largeHeader;
+      color: $red;
+    }
+  
+  }
+// for other width screen
+
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: $tabletDesign) {
+
+.first-page-main {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    padding-top: 9.2em;
+    padding-bottom: 9.2rem;
+    min-height: 200px;
+    
+  }
+  .fp-main-left-block {
+    display: grid;
+    align-items: center;
+    grid-template: auto 1 auto / 1fr;
+    padding: 0.3rem;
+  }
+  .fp-main-right-block {
+    background-image: url(../images/shoes/onSale.png);
+    display: flex;
+    flex-flow: column ;
+    align-items: flex-end;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 35%;
+
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    width: 100%;
+    background-size: 100%;
+
+
+  
+  }
+  
+  .fp-main-right-block div {
+    max-height: 3rem;
+  }
+
+
+
+
+
+
+  
+  .header-sale {
+    font-size: 3.93rem;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+  }
+  .new-price {
+    font-size: 3rem;
+    color:#D84033;
+  }
+  
+  
+  
+  
+  .first-page-footer-conteiner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .first-page-footer-conteiner div{
+    background-color: #D7B399;
+    border-radius: 0.4rem;
+    color: #D7B399;
+    margin: 0.2rem;
+    width: 4rem;
+    margin-bottom: 5rem
+  }
+  
+}
+  
+  
+  .second-page {
+    padding-top: 5.7rem;
+  }
+  .sp-head {
+    font-size: $largeHeader;
+    padding-bottom: 1.6rem;
+  }
+  .sp-description {
+    font-size: $middleHeader;
+    padding-bottom: 4.9rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //  third-page */
+  .thp-man-conteiner,
+  .thp-woman-conteiner {
+    width: 45%;
+    min-width: 260px;
+  
+  }
+  
+  .thp-man-woman-collection {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+  }
+  
+  .thp-man-woman-collection {
+    justify-content: center;
+    background-color: #F9F6F1;;
+  }
+  
+  
+  .collection-header{
+    display: flex;
+    height: 14rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    // min-width: 22rem;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    div :first-child {
+      color: $darkColor;
+      font-weight: bold;
+    }
+  }
+  
+  
+  .man-collection,
+  .woman-collection {
+    display: flex;
+    flex-flow: row wrap;
+
+    div {
+      width: 50%;
+      min-width: 110px;
+    }
+  }
+  
+  .jeans-man {
+    background-image: url(../images/collection/man/jeans/jeans_logo500.png);
+  }
+  .jacket-man{
+    background-image: url(../images/collection/man/jacket/leather_jacket_logo500.png);
+  }
+  .shirt-man{
+    background-image: url(../images/collection/man/shirt/dress_shirt_logo500.png);
+  }
+  .suits-man{
+    background-image: url(../images/collection/man/suit/suit_logo500.png);
+  }
+  
+  
+  
+  .jeans-woman {
+    background-image: url(../images/collection/woman/jeans/jeans_logo500.png);
+  }
+  .coats-woman {
+    background-image: url(../images/collection/woman/coat/fur_coat_logo500.png);
+  }
+  .dress-woman {
+    background-image: url(../images/collection/woman/dress/dress_logo500.png);
+  }
+  .kimono-woman {
+    background-image: url(../images/collection/woman/kimono/kimono_logo500.png);
+  }
+  
+  
+  
+  .element-new-collection {
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .fourth-page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-bottom: 5.14rem;
+    padding-top: 5.14rem;
+    
+    
+    .fp-descridtion {
+     font-size: 2.14rem;
+
+     @media screen and (min-width:$tabletDesign) {
+      padding-right: 2rem;
+     }
+    }
+
+    form {
+    display: flex;
+    flex-flow: row wrap;
+    // min-width: 400px;
+    align-items: center;
+    justify-content: center;
+
+
+      .fp-mail {
+        padding-right: 0.5rem;
+
+        input{
+          width: 100%;
+          height: $smallHeader;
+          border-radius: 0.4rem;
+
+          @media screen and (min-width: $mobileDesign) {  
+          height: $largeHeader;
+          width: 18.2rem;
+          
+          }
+        }
+      }
+
+
+      .fp-submit input{
+        width: 100%;
+        height: $smallHeader;
+        border-radius: 0.4rem;
+        background-color: $darkColor;
+        font-weight: bold;;
+
+        @media screen and (min-width: $mobileDesign) {   
+          height: $largeHeader;
+          width: 12rem;
+        }
+      }
+    }
+}

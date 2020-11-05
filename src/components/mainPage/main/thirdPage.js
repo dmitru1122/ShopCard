@@ -69,8 +69,9 @@ function CollectionHeader(props) {
         <div className="collection-header">
             <div>
                 <div>{sex} collection</div>
-                <div>Clothe</div>
-                <div>Button</div>
+                {/* <div>Clothe</div>
+                <div>Button</div> */}
+                {/* it can be links to ... */}
             </div>
             <div>
                 <img src={lin} title='' alt='' />

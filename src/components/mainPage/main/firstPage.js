@@ -7,24 +7,34 @@ import lp from '../../images/shoes/onSale600.png';
 import {useSelector, useDispatch} from 'react-redux';
 import * as actions from '../../../redux/actions/index';
 
-function LeftBlock(props) {
+import saleImage from '../../images/shoes/onSale.png';
+
+function SaleName(props) {
     return (
-        <div className='fp-main-left-block flex-2-1-block' >
-            <div className="text1-7">Winter sale</div>
-            <div><span className="header-sale">Sale up to 90%</span></div>
+        <div className='fp-main-sale-name ' >
+            <div className="sale-type">Winter sale</div>
+            <div className="sale-header">Sale up to 90%</div>
             <div><ButtonSale /></div>
             
         </div>
     )
 }
 
-function RightBlock(props) {
-    let oldPrice = '100';
-    let price = '80 P';
+function SaleModel(props) {
+
+    // let oldPrice = '100';
+    // let price = '80 P';
     return (
-        <div className='fp-main-right-block flex-2-1-block background-image'>
-            <div className="old-price text1-7">{oldPrice}</div>
-            <div className="new-price">{price}</div>
+        <div className='fp-main-sale-model background-image'>
+            <div className='sale-image'>
+                <img src={saleImage} />
+            </div>
+
+            <div className="sale-price">
+                <div className="old-price text1-7">100</div>
+                <div className="new-price">80</div>
+            </div>
+            
             {/* <div><img src={lp} /></div> */}
         </div>
     )
@@ -34,31 +44,18 @@ function MainBlock() {
     let classProperty = 'flex-2-1-block' ;
     return (
         <div className="first-page-main ">
-            <LeftBlock  classProperty={classProperty}/>
-            <RightBlock  classProperty={classProperty} />
+            <SaleName  classProperty={classProperty}/>
+            <SaleModel  classProperty={classProperty} />
         </div>
     );
 }
 
 
-function FooterInformation() {
-    const dispatch = useDispatch();
-    const counter = useSelector(store => store.counter);
-    return (
-        <div className="first-page-footer-conteiner">
-            <div onClick={() => dispatch(actions.increment(2))}>+2</div>
-            <div>left2</div>
-            <div>left3</div>
-            <div>left4</div>
-        </div>
-    )
-}
 function FirstPage (props) {
     return(
         <div className={props.styleClass} >
             <article className="first-page content">
                 <MainBlock />
-                <FooterInformation />
             </article>
         </div>
     )

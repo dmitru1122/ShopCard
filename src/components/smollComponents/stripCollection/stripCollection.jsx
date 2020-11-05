@@ -1,6 +1,6 @@
 import React from 'react';
 import TradePosition from '../iteams/tradePosition';
-import './stripCollection.css';
+import './stripCollection.scss';
 
 
 class StripWithHeader extends React.Component {

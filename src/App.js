@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './forAllApp.scss';
 import AddIteam from './components/addIteams/index';
 import MainPage from './components/mainPage/index';
 import Catalog from './components/catalog/index';
@@ -17,7 +17,7 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <Header/>
+          {/* <Header/> */}
 
                 
                 
@@ -30,7 +30,7 @@ class App extends React.Component {
                     <Route path="/catalog/forAll" exact component={Catalog} />
                     <Route path="/catalog/addIteam" exact component={AddIteam}/>
 
-            <Footer />
+            {/* <Footer /> */}
         </Router>
       </>
     );

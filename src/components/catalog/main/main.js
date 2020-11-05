@@ -1,24 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Filter from './filter/allFilterConteiner';
 import Content from './content/index';
 
-import {BrowserRouter, Route} from 'react-router-dom';
-class Main extends React.Component {
-    constructor(props) {
-        super(props);
-    };
+import {FilterMobile} from './filterMobile';
 
-    render() {
-        const resultClass = this.props.styleClass + ' ' + 'main';
-        return (
-            <BrowserRouter >
-            <main className={resultClass}>
-                    <Route path="/catalog" component={Filter}/>
-                    <Content path="/catalog" component={Content}/>
-            </main>
-            </BrowserRouter>
-        )
-    }
+
+
+import {BrowserRouter, Route} from 'react-router-dom';
+import Header from '../../header/header';
+import Footer from '../../footer/footer';
+
+function Main (props) {
+    const [filterVisibility, setFilterVisibility] = useState(false);
+    const resultClass = props.styleClass + ' ' + 'main';
+     
+    return (
+            <>
+                <Header />
+                <BrowserRouter >
+                <main className={resultClass}>
+                        <FilterMobile className="for-mobile" handle={() => setFilterVisibility(!filterVisibility)} />
+
+                            {(filterVisibility)?(<Route path="/catalog" component={Filter}/>):(<Content path="/catalog" component={Content}/>)}
+                            <div className="for-tablet"><Content  path="/catalog" component={Content}/></div>
+                </main>
+                </BrowserRouter>
+                <Footer />
+            </>
+    )
 }
 
 export default Main;

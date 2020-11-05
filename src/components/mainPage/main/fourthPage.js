@@ -19,11 +19,11 @@ class FourthPage extends React.Component {
         return (
             <div className={this.props.styleClass}>
                 <article className="fourth-page content">
-                    <div className='fourth-page__descridtion'>Take discount and gift</div>
-                    {/* <form> */}
-                        <div className='fourth-page__mail'><input type='email' value={this.state.value} onChange={this.handleChange} /> </div>
-                        <div className='fourth-page__submit'><input type='submit' value='FOLLOW' /></div>
-                    {/* </form> */}
+                    <div className='fp-descridtion'>Take discount and gift</div>
+                    <form >
+                        <div className='fp-mail'><input type='email' value={this.state.value} onChange={this.handleChange} /> </div>
+                        <div className='fp-submit'><input type='submit' value='FOLLOW' /></div>
+                    </form>
 
                 </article>
             </div>

@@ -6,7 +6,7 @@ import IconToShow from '../images/icon/trigonShow.png';
 import IconToHide from '../images/icon/trigonHide.png';
 import AccountLogo from '../images/icon/account.png';
 
-
+import './header.scss';
 
 
 import * as actions from '../../redux/actions/index';
@@ -16,7 +16,7 @@ import {useSelector, useDispatch } from 'react-redux';
 
 import {Link} from 'react-router-dom';
 
-import './header.css';
+// import './header.css';
 
 
 
@@ -97,7 +97,7 @@ function HeaderLogo() {
         <div className="header-logo-conteiner text1-7 to-main-page"  title="To main page">
             <Link to="/"> 
                 <img src={Logo} title="Logo" alt="Vab.logo"/> 
-                <span style={{paddingLeft: '0.5em'}}>Vab</span>
+                <span>Vab</span>
             </Link>
         </div>
         
@@ -158,6 +158,8 @@ function HeaderRightPart() {
         </div>
     )
 }
+
+
 
 
 

@@ -27,9 +27,9 @@ import ButtonAllCollection from '../../smollComponents/buttons/buttonAllCollecti
 function FifthPage(props) {
     return(
         <div className={props.styleClass}>
-            <div className="content">
-                {/* <StripWithHeader header="Discount up to 90%" collection={IteamCollection} /> */}
-            </div>
+            {/* <div className="content">
+                <StripWithHeader header="Discount up to 90%" collection={IteamCollection} />
+            </div> */}
             <div className="content">
                 <ButtonAllCollection />
             </div>

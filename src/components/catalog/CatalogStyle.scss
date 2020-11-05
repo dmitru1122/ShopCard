@@ -1,6 +1,17 @@
+@import "../../scss/variable.scss";
 
+.for-tablet {
+  display: none;
+}
 
-  
+  @media screen and(max-width: $tabletDesign) {
+    // .for-tablet {
+    //   display: block;
+    // }
+    .for-mobile {
+      display: none;
+    }
+  }
   
   
   
