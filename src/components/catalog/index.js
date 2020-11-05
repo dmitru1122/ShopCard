@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CatalogMain from './main/main';
-import './CatalogStyle.css';
+import './CatalogStyle.scss';
 
 
 import AddIteam from '../addIteams/index';
