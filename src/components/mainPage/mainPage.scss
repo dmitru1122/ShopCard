@@ -5,6 +5,7 @@
 @media screen and (max-width: $tabletDesign) {
     .Menu-logo {
         display: flex !important;
+        z-index: 20;
         
     }
 
