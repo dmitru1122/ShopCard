@@ -43,15 +43,14 @@ class Element extends React.Component {
         let visibility = false;
         
         this.check = CheckFilter(this.props.el, this.props.filter);
-        {console.log(this.props.el)}
-        {console.log(this.props.filter)}
+
         
         if(this.check){
             return (
                 <div className='trade-position'>
                     <div><img src={this.props.el.linkTo} title='' alt='tit' /></div>
                     <div>{this.props.el.header}</div>
-                    <div className="trade-position__price">{this.props.el.price}</div>
+                    <div className="trade-position__price">{this.props.el.price}sdfsd</div>
                     
                 </div>
             )

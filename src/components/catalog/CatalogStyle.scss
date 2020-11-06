@@ -1,21 +1,27 @@
 @import "../../scss/variable.scss";
 
-.for-tablet {
-  display: none;
+.show {
+  display: block;
+}
+.hidd {
+  visibility: hidden;;
 }
 
-  @media screen and(max-width: $tabletDesign) {
-    // .for-tablet {
-    //   display: block;
-    // }
-    .for-mobile {
-      display: none;
-    }
+
+
+.mobile-design {
+  display: block;
+  @media all and (min-width: $tabletDesign) {
+    display: none;
   }
-  
-  
-  
-  
+}
+
+.tablet-design {
+  display: none;
+  @media all and (min-width: $tabletDesign) {
+    display: flex;
+  }
+}
   
   
   .filter-list-conteiner {

@@ -9,6 +9,7 @@ import Element from './element';
 // import { connect } from 'react-redux';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
+import data from '../../../../dateBase';
 
 // let res = [];
 
@@ -115,28 +116,33 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 class AllElement extends React.Component {
     constructor(props){
         super(props);
-        this.state = {data: null};
+        this.state = {thisData: null};
     }
 
     // fetch iteam from server
-    async componentDidMount() {
-        const response = await fetch('http://localhost:8000/posts');
-        const json = await response.json();
-        this.setState({data: json});
+    // async componentDidMount() {
+    //     const response = await fetch('http://localhost:8000/posts');
+    //     const json = await response.json();
+    //     this.setState({data: json});
         
+    // }
+    // use file as catalog
+    componentDidMount() {
+        setTimeout(this.setState({thisData: data.posts }), 0);
     }
+
 
     render()
     {      
         const category = this.props.category;
         // check if it load from server
-        if(this.state.data == null) {
-            return <div>Wait please</div>
-        } else {
+        // if(this.state.thisData == null) {
+        //     return <div onClick={() => console.log(this.state.thisData)}>Wait please</div>
+        // } else {
             return(
                     <>
 
-                {this.state.data.map(element  =>  (
+                {data.posts.map(element  =>  (
                             // <div  style={{background: 'Red'}}>
                                 <React.Fragment key={element.id}> 
 
@@ -152,9 +158,9 @@ class AllElement extends React.Component {
                         // </div>
                                                     )
                                 )}
-                    </>
+                    </ >
                     )
-                }
+                // }
     }
 }
 

@@ -5,7 +5,7 @@ a {
 }
 
 body {
-  // background-color: red;
+  background-color: red;
 }
 
  .black-style-background {
@@ -67,4 +67,29 @@ body {
 .cursor-pointer{
   cursor: pointer;
 }
+
+
+
+
+.Menu-logo {
+  display: flex;
+  z-index: 20;
+  
+  @media all and (min-width: $tabletDesign) {
+    display: none;
+  }
+}
+.Menu-logo {
+justify-content: center;
+align-items: center;
+position: fixed;
+top: 70%;
+left: 70%;
+
+background-color: $darkColor;
+border-radius: 50%;
+height: 4rem;
+width: 4rem;
+}
+
 

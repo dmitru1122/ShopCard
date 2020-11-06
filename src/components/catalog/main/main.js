@@ -14,6 +14,8 @@ function Main (props) {
     const [filterVisibility, setFilterVisibility] = useState(false);
     const resultClass = props.styleClass + ' ' + 'main';
      
+    let content = filterVisibility? 'show': 'hidd';
+    let filter = !filterVisibility? 'show': 'hidd';
     return (
             <>
                 <Header />
@@ -21,8 +23,19 @@ function Main (props) {
                 <main className={resultClass}>
                         <FilterMobile className="for-mobile" handle={() => setFilterVisibility(!filterVisibility)} />
 
-                            {(filterVisibility)?(<Route path="/catalog" component={Filter}/>):(<Content path="/catalog" component={Content}/>)}
-                            <div className="for-tablet"><Content  path="/catalog" component={Content}/></div>
+                        <div className="mobile-design">
+                            <div className={filter}>   
+                                <Route path="/catalog" className={filterVisibility}  component={Filter}/> 
+                            </div>
+                            <div className={content}>
+                                <Content  path="/catalog" component={Content}/>
+                            </div>
+                        </div>
+                        <div className="tablet-design"> 
+                            <Route path="/catalog" component={Filter}/>
+                            <Content  path="/catalog" component={Content}/>
+                        </div> 
+                            
                 </main>
                 </BrowserRouter>
                 <Footer />
