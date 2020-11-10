@@ -62,9 +62,11 @@
     display: flex;
     flex-flow: column;
     align-items: flex-end;
-
+    @media all and (min-width: $tabletDesign) and (max-width: $desktopDesign) {
+      width: 20%;
+    }
     @media all and (min-width: $desktopDesign) {
-      width: 2 * 220px;
+      width: 25%;
     }
 }
 
