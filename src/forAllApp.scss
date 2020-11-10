@@ -1,12 +1,21 @@
 @import "./scss/variable.scss";
 
+
+
+
+
+@media all and (min-width: $desktopDesign) {
+  html {
+    font-size: 2rem;
+  }
+}
 a {
   @include link-to-text;
 }
 
-body {
-  background-color: red;
-}
+// body {
+//   background-color: red;
+// }
 
  .black-style-background {
   background-color: #212121;

@@ -48,6 +48,7 @@ class Element extends React.Component {
         if(this.check){
             return (
                 <div className='trade-position'>
+                
                     <div><img src={this.props.el.linkTo} title='' alt='tit' /></div>
                     <div>{this.props.el.header}</div>
                     <div className="trade-position__price">{this.props.el.price}sdfsd</div>

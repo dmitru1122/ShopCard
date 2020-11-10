@@ -65,7 +65,7 @@ class AllForShort extends React.Component {
                 <div onClick={() => console.log(stateFromChildren)}></div>
 
 
-                <div onClick={() => this.props.addFilter(stateFromChildren)}>
+                <div className="add-filter" onClick={() => this.props.addFilter(stateFromChildren)}>
                     Use filter
                 </div>
             </div>

@@ -37,12 +37,13 @@ function Check(value, filter) {
 
 function CheckFilter(allValue, filter) {
     // varible for catch result
+    
     let p = true;
-    console.log(filter);
     for (const [key, value] of Object.entries(filter) ) {
         
     // checking previous values p
         if (p) {
+            
 
             if (key != 'price'){
                     p = Check( allValue[key], filter[key] );

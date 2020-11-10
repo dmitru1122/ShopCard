@@ -69,7 +69,7 @@ class AllForDress extends React.Component {
                 nameState="length" 
                 handle={this.handleClick} />
 
-                <div onClick={() => this.props.addFilter(stateFromChildren)}>
+                <div className="add-filter" onClick={() => this.props.addFilter(stateFromChildren)}>
                     Use filter
                 </div>
             </div>

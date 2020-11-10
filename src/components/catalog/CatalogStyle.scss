@@ -2,9 +2,10 @@
 
 .show {
   display: block;
+
 }
 .hidd {
-  visibility: hidden;;
+  display: none;
 }
 
 
@@ -61,6 +62,10 @@
     display: flex;
     flex-flow: column;
     align-items: flex-end;
+
+    @media all and (min-width: $desktopDesign) {
+      width: 2 * 220px;
+    }
 }
 
 
@@ -73,13 +78,17 @@
 
 
 .catalog-content {
+
+   @media all and (min-width: $tabletDesign){
     width: calc(100% - 280px);
     background-color: #ffffff;
+   }
   
 }
 .catalog-list {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 
@@ -166,4 +175,19 @@
   }
   .add-bullet-yellow::before{
     color: yellow;
+  }
+
+
+
+
+  .add-filter {
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 1rem;
+    background-color: $darkColor;
+    @media all and (min-width: $tabletDesign) {
+      padding: 1rem;
+      width: 80%;
+    }
+
   }

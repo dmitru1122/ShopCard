@@ -1,5 +1,7 @@
 @import "../../scss/variable.scss";
-
+.social-network {
+  display: none;
+}
 @media screen and (max-width: $tabletDesign) {
   .footer-table,
   .footer-buttom {
@@ -10,7 +12,7 @@
     display: none;
   }
 
-  .mobile-design {
+  .footer-mobile-design {
     display: flex;
     justify-content: center;
 

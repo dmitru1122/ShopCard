@@ -133,19 +133,19 @@ class AllElement extends React.Component {
 
 
     render()
+    
     {      
         const category = this.props.category;
         // check if it load from server
-        // if(this.state.thisData == null) {
-        //     return <div onClick={() => console.log(this.state.thisData)}>Wait please</div>
-        // } else {
+        if(this.state.thisData == null) {
+            return <div onClick={() => console.log(this.state.thisData)}>Wait please</div>
+        } else {
             return(
                     <>
-
+    
                 {data.posts.map(element  =>  (
                             // <div  style={{background: 'Red'}}>
                                 <React.Fragment key={element.id}> 
-
  {/* Check category, filter depend category */}
                                     {element.iteam.category == category?  
                                         <Element el={element.iteam}/> :
@@ -160,7 +160,7 @@ class AllElement extends React.Component {
                                 )}
                     </ >
                     )
-                // }
+                }
     }
 }
 

@@ -6,6 +6,7 @@ import {FilterMobile} from './filterMobile';
 
 
 
+
 import {BrowserRouter, Route} from 'react-router-dom';
 import Header from '../../header/header';
 import Footer from '../../footer/footer';
@@ -13,9 +14,10 @@ import Footer from '../../footer/footer';
 function Main (props) {
     const [filterVisibility, setFilterVisibility] = useState(false);
     const resultClass = props.styleClass + ' ' + 'main';
-     
-    let content = filterVisibility? 'show': 'hidd';
-    let filter = !filterVisibility? 'show': 'hidd';
+    
+   
+    let content = !filterVisibility? 'show': 'hidd';
+    let filter = filterVisibility? 'show': 'hidd';
     return (
             <>
                 <Header />

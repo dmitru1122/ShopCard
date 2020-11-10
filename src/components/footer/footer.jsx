@@ -68,7 +68,7 @@ function Footer(props) {
                     <LogoDescrioption />
                     <SameLink />
                 </div>
-                <div className="mobile-design">
+                <div className="footer-mobile-design">
                     <MobileDesign />
                 </div>
                 <div className="footer-buttom white-style-background">
