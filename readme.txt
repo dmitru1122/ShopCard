@@ -8,7 +8,7 @@ git collect url
 
 // Это сейчас не работет, отключил в связи с преходом к упрощенной версии
 3 step:
-npm install json.server 
+npm install json-server / for Linux: npm install -g json-server 
 
 4 step:
 json-server --watch -p8000 db.json
