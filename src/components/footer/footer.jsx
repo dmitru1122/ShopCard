@@ -9,7 +9,7 @@ function LogoDescrioption() {
     return (
         <figure>
             <div className="footer-logo-conteiner text1-7"><img src={Logo} alt="logo"/> <span style={{paddingLeft: '0.5em'}}>Vab</span></div>
-            <div className="about-company">Descrioption</div>
+            <div className="about-company">Description</div>
         </figure>
     )
 }
