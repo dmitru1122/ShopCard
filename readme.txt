@@ -1,6 +1,6 @@
 Totorial:
 1 step:
-git collect url
+git clone url
 
 2 step:
  npm install 
