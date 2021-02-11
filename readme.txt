@@ -1,12 +1,19 @@
 Totorial:
-1 step:
-git collect url
-
-2 step:
+1
+git clone url
+2
+cd onlineStore
+3
  npm install 
+4
+npm install node-sass
+5 
+npm install node-sass@4.14.1
 
-3 step:
-npm install json.server 
+// Это сейчас не работет, отключил в связи с отсуствием бэкэнда
+6
+npm install json-server / for Linux: npm install -g json-server 
 
-4 step:
+7
 json-server --watch -p8000 db.json
+
