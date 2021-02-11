@@ -1,7 +1,8 @@
 import React from 'react';
 import CartLogo from '../images/cart.svg';
 import Counter from '../images/counter.svg';
-import Logo from '../images/logo.svg';
+import Logo from '../images/icon/V-logo.png';
+
 import IconToShow from '../images/icon/trigonShow.png';
 import IconToHide from '../images/icon/trigonHide.png';
 import AccountLogo from '../images/icon/account.png';
@@ -97,7 +98,6 @@ function HeaderLogo() {
         <div className="header-logo-conteiner text1-7 to-main-page"  title="To main page">
             <Link to="/"> 
                 <img src={Logo} title="Logo" alt="Vab.logo"/> 
-                <span>Vab</span>
             </Link>
         </div>
         
@@ -129,8 +129,8 @@ function Cart (props) {
     
     return(
         <div className="cart-conteiner">
-            <div className="cart-block"><img src={CartLogo} /></div>
-            <div className="cart-block" onClick={() => dispatch(actions.decrement(5))}><img src={Counter} />{counter}</div>
+            {/* <div className="cart-block"> Add<img src={CartLogo} /></div>
+            <div className="cart-block" onClick={() => dispatch(actions.decrement(5))}><img src={Counter} />{counter}</div> */}
         </div>
     )
 }
@@ -142,8 +142,8 @@ class ToAccount extends React.Component {
     render() {
         return(
             <div className="to-account">
-                <Link to="/catalog/addIteam">
-                <img src={AccountLogo} />
+                <Link to="/catalog/addIteam"> Add
+                {/* <img src={AccountLogo} /> Add */}
                 </Link>
             </div>
         )

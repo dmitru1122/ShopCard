@@ -2,6 +2,8 @@
 
 @media screen and (max-width: $tabletDesign){
     .header {
+        background-color: $black;
+        margin: 0;
         display: block;
 
         .header-left-part-conteiner,
@@ -13,12 +15,16 @@
 
 
 .header-logo-conteiner {
+  img {
+    width: 9rem;
+  }
     a {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         @include link-to-text;
+
 
         span {
             padding-left: 0.5rem;
@@ -59,12 +65,17 @@
 .header {
     text-align: center;
     display: flex; 
-      /* for old browser */
+
+      background-color: $black;
+
+      color: $darkColor;
+
+      margin: 0;
 
     display: grid; 
     grid-template: 1fr / repeat(3, 1fr);
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     align-items: center;
     /* font-size: 1rem; */
   }
@@ -75,6 +86,17 @@
     display: flex; 
     flex-flow: row nowrap;
     justify-content: space-between; 
+
+  }
+  .header {
+    .header-logo-conteiner {
+      img {
+        width: 5rem;
+      }
+    }
+    a { 
+      color: #B7714b;
+    }
   }
   
   .header-right-part-conteiner {

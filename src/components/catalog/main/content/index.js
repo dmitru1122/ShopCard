@@ -121,10 +121,11 @@ class AllElement extends React.Component {
 
     // fetch iteam from server
     // async componentDidMount() {
+        // async() => {
     //     const response = await fetch('http://localhost:8000/posts');
     //     const json = await response.json();
     //     this.setState({data: json});
-        
+        // }
     // }
     // use file as catalog
     componentDidMount() {

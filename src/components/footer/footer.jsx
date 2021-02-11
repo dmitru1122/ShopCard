@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/logo.svg';
+import Logo from '../images/icon/V-logo.png';
 import vkIcon from '../images/icon/vk.svg';
 import facebookIcon from '../images/icon/facebook.svg';
 import instagramIcon from '../images/icon/instagram.svg';
@@ -8,8 +8,7 @@ import './footer.scss';
 function LogoDescrioption() {
     return (
         <figure>
-            <div className="footer-logo-conteiner text1-7"><img src={Logo} alt="logo"/> <span style={{paddingLeft: '0.5em'}}>Vab</span></div>
-            <div className="about-company">Description</div>
+            <img src={Logo} alt="logo"/> 
         </figure>
     )
 }
@@ -60,10 +59,9 @@ function MobileDesign() {
 }
 
 function Footer(props) {
-    const footerClass = "footer " + props.styleClass;
     
     return(
-            <footer className={footerClass}>
+            <footer className='black-style-background'>
                 <div className="footer-top">
                     <LogoDescrioption />
                     <SameLink />
