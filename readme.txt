@@ -4,11 +4,7 @@ git clone url
 2
 cd onlineStore
 3
- npm install 
-4
-npm install node-sass
-5 
-npm install node-sass@4.14.1
+ npm i
 
 // Это сейчас не работет, отключил в связи с отсуствием бэкэнда
 6
