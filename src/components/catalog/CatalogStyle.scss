@@ -2,13 +2,10 @@
 
 .show {
   display: block;
-
 }
 .hidd {
   display: none;
 }
-
-
 
 .mobile-design {
   display: block;
@@ -23,173 +20,118 @@
     display: flex;
   }
 }
-  
-  
-  .filter-list-conteiner {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-  
-  }
-  .filter-list {
-    padding-left: 4rem;
-  }
-  
-  .filter-ourself-show {
-    font-size: 1.4rem;
-    padding-left: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
 
+.filter-list-conteiner {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+.filter-list {
+  padding-left: 4rem;
+}
 
-
+.filter-ourself-show {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 .main {
-    display: flex;
+  display: flex;
 }
 .all-filter-conteiner {
-    width: 220px;
-    padding-right: 60px;
-    display: flex;
-    flex-flow: column;
-    align-items: flex-end;
-    @media all and (min-width: $tabletDesign) and (max-width: $desktopDesign) {
-      width: 20%;
-    }
-    @media all and (min-width: $desktopDesign) {
-      width: 25%;
-    }
+  width: 220px;
+  padding-right: 60px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  @media all and (min-width: $tabletDesign) and (max-width: $desktopDesign) {
+    width: 20%;
+  }
+  @media all and (min-width: $desktopDesign) {
+    width: 25%;
+  }
 }
-
-
-
-
-
-
-
-
-
 
 .catalog-content {
-
-   @media all and (min-width: $tabletDesign){
+  @media all and (min-width: $tabletDesign) {
     width: calc(100% - 280px);
     background-color: #ffffff;
-   }
-  
+  }
 }
 .catalog-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
-
-
-
-
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
 .disable {
-    color: grey;
+  color: grey;
 }
 .normal {
-    color: black;
+  color: black;
 }
-.to-first-page button{
-    padding-right: 0.6rem;
+.to-first-page button {
+  padding-right: 0.6rem;
 }
-.to-privious-page button{
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+.to-privious-page button {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
 }
-.to-second-page button{
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
+.to-second-page button {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
 }
-.to-last-page button{
-    padding-left: 0.6rem;
+.to-last-page button {
+  padding-left: 0.6rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .for-change-bullet {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .for-change-bullet div {
-    text-align: left;
-    text-indent: -1rem;
-  }
-  .for-change-bullet div::before {
-    padding-left: 1rem;
-    padding-right: 2rem;
-    content:"•" ;
-    font-size: 1.5rem;
-  }
-  .add-bullet-red::before {
-    color: red;
-  }
-  .add-bullet-black::before {
-    color: black
-  }
-  .add-bullet-white::before{
-    color:white;
-  }
-  .add-bullet-green::before{
-    color: green;
-  }
-  .add-bullet-brown::before{
-    color: brown;
-  }
-  .add-bullet-yellow::before{
-    color: yellow;
-  }
+  display: flex;
+  flex-flow: column nowrap;
+}
+.for-change-bullet div {
+  text-align: left;
+  text-indent: -1rem;
+}
+.for-change-bullet div::before {
+  padding-left: 1rem;
+  padding-right: 2rem;
+  content: "•";
+  font-size: 1.5rem;
+}
+.add-bullet-red::before {
+  color: red;
+}
+.add-bullet-black::before {
+  color: black;
+}
+.add-bullet-white::before {
+  color: white;
+}
+.add-bullet-green::before {
+  color: green;
+}
+.add-bullet-brown::before {
+  color: brown;
+}
+.add-bullet-yellow::before {
+  color: yellow;
+}
 
-
-
-
-  .add-filter {
-    padding: 0.5rem;
-    width: 50%;
-    border-radius: 1rem;
-    background-color: $darkColor;
-    @media all and (min-width: $tabletDesign) {
-      padding: 1rem;
-      width: 80%;
-    }
-
+.add-filter {
+  padding: 0.5rem;
+  width: 50%;
+  border-radius: 1rem;
+  background-color: $darkColor;
+  @media all and (min-width: $tabletDesign) {
+    padding: 1rem;
+    width: 80%;
   }
+}
