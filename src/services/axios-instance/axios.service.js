@@ -2,7 +2,7 @@ import Axios from 'axios';
 
 export * from 'axios';
 
-const axios = Axios.create({ withCredentials: true });
+const axios = Axios.create({  });
 
 axios.interceptors.response.use(
   response => {
