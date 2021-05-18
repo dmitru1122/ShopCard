@@ -97,7 +97,7 @@ function HeaderLogo() {
     return( 
         <div className="header-logo-conteiner text1-7 to-main-page"  title="To main page">
             <Link to="/"> 
-                <img src={Logo} title="Logo" alt="Vab.logo"/> 
+                <img src={Logo} title="To main page " alt="Vab.logo"/> 
             </Link>
         </div>
         

@@ -7,7 +7,7 @@ import './footer.scss';
 
 function LogoDescrioption() {
     return (
-        <figure>
+        <figure className="logo">
             <img src={Logo} alt="logo"/> 
         </figure>
     )
@@ -17,7 +17,7 @@ function SameLink() {
     return(
         <article className="footer-table">
             <div className='ft__tr'>
-                <div className='ft__th'>General link</div>
+                <div onDragS className='ft__th'>General link</div>
                 <div className='ft__td'>About us</div>
                 <div className='ft__td'>Catalog</div>
                 <div className='ft__td'>Delivery</div>

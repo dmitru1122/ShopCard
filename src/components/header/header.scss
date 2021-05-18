@@ -71,7 +71,7 @@
       color: $darkColor;
 
       margin: 0;
-
+// if Browser support grid
     display: grid; 
     grid-template: 1fr / repeat(3, 1fr);
     justify-content: space-between;
