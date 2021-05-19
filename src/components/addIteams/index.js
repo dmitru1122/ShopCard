@@ -24,11 +24,15 @@ class AddIteam extends React.Component {
       size: "",
       color: "",
       length: "",
-      fit: ""
+      fit: "",
+      file: '',
+      file_name: '',
+      date: '',
 
       // priceValue : '',
     };
     this.handleChange = this.handleChange.bind(this);
+    this.loadFile = this.loadFile.bind(this);
     // this.handleClick = this.handleClick.bind(this);
   }
 
@@ -58,8 +62,32 @@ class AddIteam extends React.Component {
     });
   }
 
-  sendItem(item) {
-    prodactService.sendItem(item, 'jeans');
+  loadFile(e) {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.readAsBinaryString(file);
+    reader.onerror = function (err) {
+      console.error('File read error: ', err);
+    };
+    reader.onload = e => {
+      if (e.target?.result) {
+        this.setState((state) => ({
+          file: e.target?.result,
+        }))
+      } else {
+        return;
+      }
+    };
+    this.setState((state) => ({
+      file_name: file.name,
+    }))
+  }
+
+  sendItem(stateValue) {
+    const dateNow = new Date();
+    const sendValue = {...stateValue, date: dateNow};
+    console.log(item);
+    prodactService.sendItem(sendValue, 'jeans');
   }
 
   render() {
@@ -247,7 +275,7 @@ class AddIteam extends React.Component {
             </div>
             <div className="list">
               <div>
-                <label> Header </label>
+                <label> Title </label>
                 <input
                   id="header"
                   type="text"
@@ -257,12 +285,11 @@ class AddIteam extends React.Component {
                 />
               </div>
               <div>
-                <label> Link to </label>
+                <label> Load file </label>
                 <input
                   id="linkTo"
-                  type="text"
-                  value={this.state.linkTo}
-                  onChange={this.handleChange}
+                  type="file"
+                  onChange={this.loadFile}
                   name="linkTo"
                 />
               </div>

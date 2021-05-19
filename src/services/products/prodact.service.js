@@ -1,6 +1,6 @@
 import Axios from '../axios-instance/axios.service';
 
-const API_URL = 'https://vshopbackend.herokuapp.com/api/v1';
+const API_URL = process.env.NODE_ENV !== 'development' ? 'https://vshopbackend.herokuapp.com/api/v1' : 'http://localhost:3000/api/v1'; ;
 const LIST_PRODUCTS = 'product';
 
 class FormsService {
