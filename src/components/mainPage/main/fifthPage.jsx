@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 // import StripWithHeader from '../../smollComponents/stripCollection/stripCollection';
-import ButtonAllCollection from '../../smollComponents/buttons/buttonAllCollection';
+import ButtonAllCollection from "../../smollComponents/buttons/buttonAllCollection";
 
 // let shirt = {
 //     head: 'Shirt',
@@ -23,18 +23,17 @@ import ButtonAllCollection from '../../smollComponents/buttons/buttonAllCollecti
 //     3: jacket,
 // }
 
-
 function FifthPage(props) {
-    return(
-        <div className={props.styleClass}>
-            {/* <div className="content">
+  return (
+    <div className={props.styleClass}>
+      {/* <div className="content">
                 <StripWithHeader header="Discount up to 90%" collection={IteamCollection} />
             </div> */}
-            <div className="content">
-                <ButtonAllCollection />
-            </div>
-        </div>
-    )
+      <div className="content">
+        <ButtonAllCollection />
+      </div>
+    </div>
+  );
 }
 
 export default FifthPage;

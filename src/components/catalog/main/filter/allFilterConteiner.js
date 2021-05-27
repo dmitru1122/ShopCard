@@ -1,18 +1,12 @@
-import React from 'react';
-import ForJeans from './forJeans/allForJeans';
-import ForJacket from './forJacket/allForJacket';
-import ForShirt from './forShirt/allForShirt';
-import ForShoes from './forShoes/allForShoes';
-import ForWomanDress from './forDresses/allForDress';
-import ForAll from './forAll/forAll';
+import React from "react";
+import ForJeans from "./forJeans/allForJeans";
+import ForJacket from "./forJacket/allForJacket";
+import ForShirt from "./forShirt/allForShirt";
+import ForShoes from "./forShoes/allForShoes";
+import ForWomanDress from "./forDresses/allForDress";
+import ForAll from "./forAll/forAll";
 
-import {BrowserRouter as Router, Route} from 'react-router-dom';
-
-
-
-
-
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Attempt control all filter from this file,
 //  bad idea because it will be very much import and hard to understand what happend
@@ -28,12 +22,12 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 //         switch(category) {
 //             case "Dresses":
-//                 return( 
+//                 return(
 //                     <div>bla-la-la</div>
 //                 )
 //         }
 //     }
-    
+
 // }
 
 // function forDresses() {
@@ -43,30 +37,28 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 // }
 
 class AllFilter extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            typeCollection:  this.props.typeCollection,
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      typeCollection: this.props.typeCollection,
+    };
+  }
 
-    render() {
+  render() {
     const typeCollection = this.props.type;
-        return (
-            <Router>
-                    <section className="all-filter-conteiner">
-                        <Route path="/catalog/forJeans" component={ForJeans}/>
-                        <Route path="/catalog/forJacket" component={ForJacket}/>
-                        <Route path="/catalog/forShirt"   component={ForShirt}/>
-                        <Route path="/catalog/forShoes"  component={ForShoes}/>
-                        <Route path="/catalog/forDresses" component={ForWomanDress} />
-                        <Route path="/catalog/forAll"  component={ForAll} />
-
-                    </section>
-               
-            </Router>
-        )
-    }
+    return (
+      <Router>
+        <section className="all-filter-conteiner">
+          <Route path="/catalog/forJeans" component={ForJeans} />
+          <Route path="/catalog/forJacket" component={ForJacket} />
+          <Route path="/catalog/forShirt" component={ForShirt} />
+          <Route path="/catalog/forShoes" component={ForShoes} />
+          <Route path="/catalog/forDresses" component={ForWomanDress} />
+          <Route path="/catalog/forAll" component={ForAll} />
+        </section>
+      </Router>
+    );
+  }
 }
 
 export default AllFilter;

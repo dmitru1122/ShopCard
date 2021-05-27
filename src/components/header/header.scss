@@ -1,96 +1,87 @@
 @import "../../scss/variable.scss";
 
-@media screen and (max-width: $tabletDesign){
-    .header {
-        display: block;
+@media screen and (max-width: $tabletDesign) {
+  .header {
+    background-color: $black;
+    margin: 0;
+    display: block;
 
-        .header-left-part-conteiner,
-        .header-right-part-conteiner{
-            display: none;
-        }
+    .header-left-part-conteiner,
+    .header-right-part-conteiner {
+      display: none;
     }
+  }
 }
-
 
 .header-logo-conteiner {
-    a {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        @include link-to-text;
+  img {
+    width: 9rem;
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include link-to-text;
 
-        span {
-            padding-left: 0.5rem;
-        }
+    span {
+      padding-left: 0.5rem;
     }
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media all and (min-width: $tabletDesign) {
-
-.header {
+  .header {
     text-align: center;
-    display: flex; 
-      /* for old browser */
+    display: flex;
 
-    display: grid; 
+    background-color: $black;
+
+    color: $darkColor;
+
+    margin: 0;
+    // if Browser support grid
+    display: grid;
     grid-template: 1fr / repeat(3, 1fr);
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     align-items: center;
     /* font-size: 1rem; */
   }
-  
+
   .header-left-part-conteiner,
   .header-logo-conteiner {
     flex: 1;
-    display: flex; 
+    display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
-  
+  .header {
+    .header-logo-conteiner {
+      img {
+        width: 5rem;
+      }
+    }
+    a {
+      color: #b7714b;
+    }
+  }
+
   .header-right-part-conteiner {
     display: flex;
   }
   .header-right-part-conteiner div {
     flex: 1;
   }
-  
-  .header-list-filter{
+
+  .header-list-filter {
     border-radius: 0.5rem;
     position: absolute;
     width: 10rem;
-    background-color: #F9F6F1;
+    background-color: #f9f6f1;
     border: 1.5px dashed white;
-    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .header-list-filter div {
     border-top: 1px solid white;
@@ -104,13 +95,10 @@
     font-weight: bold;
   }
 
-.to-main-page {
-  cursor: pointer;
-}
+  .to-main-page {
+    cursor: pointer;
+  }
 
-
-
-  
   .delivery-conteiner {
     display: flex;
     flex-flow: row wrap;
@@ -121,16 +109,11 @@
   .delivery-block {
     margin: 0 1.5rem;
   }
-  
-  
-  .icon-show-hide{
+
+  .icon-show-hide {
     width: 1rem;
   }
-  
-  
-  
-  
-  
+
   .cart-conteiner {
     display: flex;
     flex-flow: row nowrap;
@@ -139,18 +122,16 @@
     margin: 0 0.5rem;
   }
 
-
-.to-account img {
+  .to-account img {
     width: 2rem;
     opacity: 0.7;
-}
+  }
 
-.to-account img:hover {
+  .to-account img:hover {
     opacity: 1;
-}
-.to-account img:visited {
-  opacity: 1;
-  filter: saturate(25);
-}
-
+  }
+  .to-account img:visited {
+    opacity: 1;
+    filter: saturate(25);
+  }
 }

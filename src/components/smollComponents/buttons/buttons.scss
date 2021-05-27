@@ -1,34 +1,27 @@
 @import "../../../scss/variable.scss";
 
-
 .button-all-collection {
-    padding-bottom: 10.7rem;
-    padding-top: 7.2rem;
+  padding-bottom: 10.7rem;
+  padding-top: 7.2rem;
 
-    span{
-      padding: 1.25rem 2.5rem;
-      color: $white;
-      text-decoration: none;
-      background-color: $darkColor;
-      border-radius: 0.5rem;
-      font-size: 1.14rem;
-  
+  span {
+    padding: 1.25rem 2.5rem;
+    color: $white;
+    text-decoration: none;
+    background-color: $darkColor;
+    border-radius: 0.5rem;
+    font-size: 1.14rem;
   }
 }
-  
-  
-  
-  
-  .button-sale a{
-    background-color: $darkColor;
-    border-radius: 0.4rem;
-    color: #fff; /* цвет текста */
-    text-decoration: none; /* убирать подчёркивание у ссылок */
-    user-select: none; /* убирать выделение текста */
-    padding: .5em 1.3em; /* отступ от текста */
-    outline: none; /* убирать контур в Mozilla */
-    
-    white-space: nowrap;
-  
-  } 
-  
+
+.button-sale a {
+  background-color: $darkColor;
+  border-radius: 0.4rem;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  padding: 0.5em 1.3em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+
+  white-space: nowrap;
+}
