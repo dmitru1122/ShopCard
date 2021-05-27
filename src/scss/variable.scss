@@ -1,7 +1,7 @@
-$black: #261E1E;
-$darkColor: #B7714b;
-$white: #FFFFFF;
-$red: #D84033;
+$black: #261e1e;
+$darkColor: #b7714b;
+$white: #ffffff;
+$red: #d84033;
 
 // for font-size
 $textSize: 1rem;
@@ -11,13 +11,13 @@ $largeHeader: 2.14rem;
 $biggestHeader: 3.95rem;
 
 @mixin link-to-text {
-    color: $darkColor;
-    text-decoration: none;
-  }
-  
+  color: $darkColor;
+  text-decoration: none;
+}
+
 .mobileDesign {
   // .first-page-main {
-    display: block;
+  display: block;
   // }
 }
 
@@ -26,4 +26,3 @@ $mobileDesign: 479px;
 $tabletDesign: 767px;
 $desktopDesign: 1200px;
 $maxDesign: 1900px;
-

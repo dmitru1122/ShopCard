@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
 
-    .social-network{
+    .social-network {
       display: flex;
       flex-flow: column wrap;
 
@@ -27,9 +27,7 @@
         padding-top: 0.5rem;
       }
     }
-
   }
-
 }
 
 .footer-top {
@@ -39,26 +37,6 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer-top {
   display: flex;
@@ -73,7 +51,7 @@
 
 .footer-logo-conteiner {
   flex: 1;
-  display: flex; 
+  display: flex;
   flex-flow: row wrap;
 }
 
@@ -83,18 +61,16 @@
   font-weight: bold;
 }
 
-
 .footer-table {
   padding-top: 5.7rem;
   padding-bottom: 5.7rem;
   display: grid;
-  grid-template:auto/ auto auto auto auto;
+  grid-template: auto/ auto auto auto auto;
 }
 .ft__tr {
-
   margin: 5% 10%;
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr/auto;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / auto;
 }
 .ft__td,
 .ft__th {
@@ -107,8 +83,7 @@
   font-size: 0.8rem;
 }
 
-.ft__icon a{
-  color: #FFFFFF;
+.ft__icon a {
+  color: #ffffff;
   text-decoration: none;
-
 }

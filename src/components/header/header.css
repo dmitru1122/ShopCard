@@ -1,15 +1,15 @@
-
+/* 
 .header {
     text-align: center;
     display: flex; 
-      /* for old browser */
+      for old browser
 
     display: grid; 
     grid-template: 1fr / repeat(3, 1fr);
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
-    /* font-size: 1rem; */
+    font-size: 1rem;
   }
   
   .header-left-part-conteiner,
@@ -95,4 +95,4 @@
   opacity: 1;
   filter: saturate(25);
 }
-
+ */
