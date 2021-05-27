@@ -1,10 +1,6 @@
 Totorial:
 1
-git clone url
-2
-cd onlineStore
-3
 npm i
-4
+2
 npm start
 
